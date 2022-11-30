@@ -1,0 +1,27 @@
+const Scientifique = require('../src/app').Scientifique;
+const expect = require('chai').expect;
+
+describe('Test des fonctions Scientifique', function()
+
+ {
+    let Sci1 = new Scientifique();
+    let Nombre1 = 7
+    let Nombre2 = 5
+
+    it('1. Tester le carré d un nombre', function(done) {
+        expect(Sci1.Carré(Nombre1)).to.equal(Nombre1 * Nombre1);
+        done();
+    });
+
+    it('2. Tester la racine carré', function(done) {
+        expect(Sci1.RacineCarre(Nombre2));
+        done();
+    });
+
+    it('3. Tester la puissance d un nombre', function(done) {
+        expect(Sci1.Puissance(Nombre1, Nombre2));
+        done();
+
+    });
+
+});
