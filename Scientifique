@@ -1,0 +1,18 @@
+class Scientifique {
+    constructor() {
+    }
+    
+  Carré(nombre1){
+    return Math.pow(nombre1,2);
+  }
+  Racine(nombre1){
+    return Math.sqrt(nombre1);
+  }
+  Puissance(nombre1,nombre2){
+    return Math.pow(nombre1, nombre2);
+  }
+}
+
+module.exports = {
+    Scientifique:Scientifique
+}
