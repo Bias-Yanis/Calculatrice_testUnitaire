@@ -1,0 +1,33 @@
+class Arithmétique {
+    constructor() {
+    }
+    
+    Addition(nombre1,nombre2) {
+        return(nombre1 + nombre2);
+    }
+    Soustraction(nombre1,nombre2){
+        if(nombre1 > nombre2){
+            return(nombre1 - nombre2);
+        }
+        else {
+            return(nombre2 - nombre1);
+        }
+    }
+    Multiplication(nombre1,nombre2){
+        return(nombre1 * nombre2);  
+    }
+    Division(nombre1,nombre2){
+        return(nombre1 / nombre2);
+    }
+    Pourcentage(nombre1,nombre2){
+        if(nombre1 < nombre2){
+            return 0
+        } else {
+            return(100*(nombre2/nombre1));
+        }
+    }
+}
+
+module.exports = {
+    Arithmétique:Arithmétique
+}
