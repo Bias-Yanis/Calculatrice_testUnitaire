@@ -1,0 +1,36 @@
+const Arithmétique = require('../src/app').Arithmétique;
+const expect = require('chai').expect;
+
+describe('Test des fonctions de l Arithmétique', function()
+
+ {
+    let Art1 = new Arithmétique();
+    let Nombre1 = 7
+    let Nombre2 = 5
+
+    it('1. Tester l addition', function(done) {
+        expect(Art1.Addition(Nombre1, Nombre2)).to.equal(Nombre1 + Nombre2);
+        done();
+    });
+
+    it('2. Tester la soustraction', function(done) {
+        expect(Art1.Soustraction(Nombre1, Nombre2));
+        done();
+    });
+
+    it('3. Tester la multiplication', function(done) {
+        expect(Art1.Multiplication(Nombre1, Nombre2)).to.equal(Nombre1 * Nombre2);
+        done();
+    });
+
+    it('4. Tester la division', function(done) {
+        expect(Art1.Division(Nombre1, Nombre2)).to.equal(Nombre1 / Nombre2);
+        done();
+    });
+
+    it('5. Tester le calcul d un pourcentage', function(done) {
+        expect(Art1.Pourcentage(Nombre1, Nombre2));
+        done();
+    });
+
+});
